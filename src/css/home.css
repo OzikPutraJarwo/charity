@@ -1,0 +1,519 @@
+/* ----- SECTIONS RESET ----- */
+
+section .text .category {
+    color: darkorange;
+    margin-bottom: 0.5rem;
+}
+
+section .text h2 {
+    font-size: 2.2rem;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+section .text .desc {
+    opacity: .8;
+    margin-bottom: 2rem;
+}
+
+section .text .button {
+    display: inline-block;
+    background: darkorange;
+    color: white;
+    font-size: .9rem;
+    padding: 0.6rem 2rem;
+    border-radius: 4rem;
+    transition: .3s all;
+}
+
+section .text .button:hover {
+    background: #be7c2b;
+}
+
+/* ----- HERO ----- */
+
+#hero {
+    margin-top: 55px;
+    background-image: url(../../assets/home/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero .bg {
+    backdrop-filter: blur(4px) brightness(0.4);
+}
+
+#hero .wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 2.5rem 13%;
+    text-align: center;
+    color: white;
+}
+
+#hero .logo {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 0 auto 2.5rem;
+    border-radius: 100%;
+}
+
+#hero h2 {
+    font-size: 2.7rem;
+    line-height: 1;
+    margin-bottom: 0.7rem;
+}
+
+#hero p {
+    margin-bottom: 2.5rem;
+    opacity: 0.8;
+}
+
+#hero .action {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+#hero .action a {
+    display: flex;
+    color: white;
+    padding: 0.8rem;
+    width: 200px;
+    font-weight: bold;
+    border-radius: 5rem;
+    transition: .3s all;
+    justify-content: center;
+}
+
+#hero .action a svg {
+    display: none;
+}
+
+#hero .action .donate {
+    background: darkorange;
+}
+
+#hero .action .donate:hover {
+    background: #be7c2b;
+}
+
+#hero .action .volunteer {
+    background: #3da1b6;
+}
+
+#hero .action .volunteer:hover {
+    background: #317c8b;
+}
+
+/* ----- PROGRAMS ----- */
+
+#programs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#programs .item {
+    background-image: url(../../assets/home/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#programs .item-wrap {
+    padding: 4rem 2rem 2rem;
+    backdrop-filter: blur(4px);
+    color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    transition: .3s all;
+    height: 100%;
+}
+
+#programs .item:nth-child(1) .item-wrap {background: rgb(31 65 133 / 86%);}
+
+#programs .item:nth-child(2) .item-wrap {
+    background: rgb(135 135 28 / 86%);
+}
+
+#programs .item:nth-child(3) .item-wrap {
+    background: rgb(164 57 57 / 86%);
+}
+
+#programs .item-wrap svg {
+    fill: #e6e6e6;
+    width: 40px;
+    margin-bottom: 1rem;
+}
+
+#programs .item-wrap h2 {
+    font-size: 1.4rem;
+}
+
+#programs .item-wrap p {
+    font-size: 0.9rem;
+}
+
+#programs .item-wrap:hover {
+    backdrop-filter: unset;
+}
+
+/* ----- MISSION ----- */
+
+#mission {
+    padding: 4rem 2rem;
+}
+
+#mission .wrap {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+#mission .img {
+    font-size: 0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    line-height: 0;
+    box-shadow: 0px 0px 20px 3px rgb(0 0 0 / 40%);
+}
+
+/* ----- VISION ----- */
+
+#vision {
+    padding: 0 2rem 4rem;
+}
+
+#vision .wrap {
+    display: grid;
+    gap: 4rem;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+#vision .img {
+    display: flex;
+    align-items: center;
+    font-size: 0;
+    line-height: 0;
+    gap: 2rem;
+}
+
+#vision .img .left img {
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    border-radius: 2rem 0;
+}
+
+#vision .img .right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#vision .img .right img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+#vision .img .right img:nth-child(1) {
+    border-radius: 2rem 0;
+}
+
+#vision .img .right img:nth-child(2) {
+    border-radius: 0 2rem;
+}
+
+#vision img {
+    box-shadow: 0px 0px 20px 3px rgb(0 0 0 / 40%);
+}
+
+/* ----- VIDEO ----- */
+
+#video {
+    background-image: url(../../assets/home/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#video .bg {
+    backdrop-filter: blur(4px) brightness(0.4);
+    background: #202d35a6;
+}
+
+#video .wrap {
+    padding: 5rem 2rem;
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+#video .img {
+    position: relative;
+    cursor: pointer;
+    font-size: 0;
+    line-height: 0;
+}
+
+#video .img img {
+    transition: .3s all;
+    filter: brightness(0.8);
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 20px 3px rgb(0 0 0 / 22%);
+}
+
+#video .img .play {
+    transition: .3s all;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: darkorange;
+    border-radius: 100%;
+    box-shadow: 0px 0px 20px 3px rgb(0 0 0 / 57%);
+    justify-content: center;
+    align-items: center;
+}
+
+#video .img .play svg {
+    fill: white;
+    width: 17px;
+    padding-left: 2px;
+}
+
+#video .img:hover img {
+    filter: brightness(0.5);
+}
+
+#video .img:hover .play {transform: translate(-50%, -50%) scale(1.2);}
+
+/* ----- DONATE ----- */
+
+#donate {
+    padding: 4rem 2rem;
+}
+
+#donate .text {
+    text-align: center;
+}
+
+#donate .form {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    gap: 3rem;
+}
+
+#donate .form .img {
+    background-image: url(../../assets/home/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+    background-position: center;
+}
+
+#donate .bank {
+    display: grid;
+    gap: 1rem;
+}
+
+#donate .bank .title {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+#donate .bank .list {
+    display: grid;
+    gap: 1rem;
+}
+
+#donate .bank .list p {
+    display: flex;
+    align-items: center;
+    line-height: 0;
+    gap: 0.8rem;
+}
+
+#donate .bank .list p img {
+    width: 25px;
+    height: 25px;
+    border-radius: 0.2rem;
+}
+
+#donate .bank .name {
+    margin-bottom: 1rem;
+}
+
+#donate .bank .transparent a {
+    background: darkorange;
+    color: white;
+    padding: 1.1rem 2rem;
+    font-size: 0.85rem;
+    border-radius: 88px;
+    transition: .3s all;
+    display: inline-block;
+    margin-top: 0.5rem;
+    line-height: 0;
+}
+
+#donate .bank .transparent a:hover {
+    background: #be7c2b;
+}
+
+#donate .bank .confirm a {
+    background: #63a663;
+    color: white;
+    padding: 1.1rem 2rem;
+    font-size: 0.85rem;
+    border-radius: 88px;
+    transition: .3s all;
+    display: inline-block;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    line-height: 0;
+}
+
+#donate .bank .confirm a:hover {
+    background: #4f8b4f;
+}
+
+/* ----- FOOTER ----- */
+
+footer {
+    background: #1a1a1a;
+    color: #e6e6e6;
+    padding: 4rem 2rem;
+}
+
+footer .wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+footer .left {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+footer .left img {
+    width: 100px;
+    border-radius: 100%;
+}
+
+footer .left .social {
+    margin-top: 1rem;
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+footer .left .social a svg {
+    width: 20px;
+    height: 20px;
+    transition: .3s all;
+    fill: #e6e6e6;
+}
+
+footer .left .social a svg:hover {
+    opacity: 0.6;
+}
+
+footer .right {
+    text-align: right;
+}
+
+footer .right h2 {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+footer .right .with-icon {
+    display: grid;
+    grid-template-columns: calc(100% - 20px - 1rem) 20px;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+footer .right .with-icon svg {
+    order: 1;
+    fill: #e6e6e6;
+}
+
+@media screen and (max-width:568px){
+    html {
+        font-size: 15px;
+    }
+    
+    #hero .wrap {
+        padding: 4rem 3rem;
+    }
+    
+    #hero h2 {
+        font-size: 2.1rem;
+    }
+    
+    #hero .action {
+        gap: 1.5rem;
+    }
+    
+    #programs, #mission .wrap, #vision .wrap, #video .wrap, #donate .form, footer .wrap {
+        grid-template-columns: 1fr;
+    }
+    
+    #programs .item-wrap {
+        padding: 2rem;
+    }
+    
+    #mission .wrap {gap: 2rem;}
+    
+    #mission .img {
+        order: 0;
+    }
+    
+    #mission .text {
+        order: 1;
+    }
+    
+    #vision {
+        padding: 0 3rem 3rem;
+    }
+    
+    #vision .wrap {
+        gap: 2rem;
+    }
+    
+    #donate .form {
+        gap: 2rem;
+    }
+    
+    #donate .form .img {
+        height: 150px;
+    }
+    
+    footer {
+        padding: 3rem;
+    }
+    
+    footer .right {
+        text-align: left;
+    }
+    
+    footer .right .with-icon:last-child {
+        margin: 0;
+    }
+    
+    footer .wrap {
+        gap: 3rem;
+    }
+}

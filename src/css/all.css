@@ -1,0 +1,242 @@
+/* ----- FONT ----- */
+
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+/* ----- CSS Reset ----- */
+
+:root {
+  --lightgray: #e7e7e7;
+  --first: #ff8c00;
+  --first-dark: #ac650f;
+  --second: #45b61a;
+  --second-dark: #3b8e1b;
+}
+
+* {
+    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Mukta';
+  font-size: 17px;
+}
+
+body {
+  line-height: 1.4rem;
+  color: #333;
+}
+
+body.ov {
+  overflow: hidden;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: bold;
+  font-family: "Asap";
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ----- HEADER ----- */
+
+.wrap {
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    padding: 0 1rem;
+    background: white;
+    box-shadow: 0px 2px 15px 1px rgb(0 0 0 / 20%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    font-size: .9rem;
+    z-index: 100;
+}
+
+header .wrap {
+    display: grid;
+    grid-template-columns: 170px calc(100% - 426px) 255px;
+}
+
+header .logo {
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+}
+
+header .logo img {
+    height: 55px;
+    width: 55px;
+    padding: 0.4rem;
+    border-radius: 100%;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 0.7rem;
+    line-height: 0.8rem;
+    font-weight: 500;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 2rem;
+    opacity: 0.7;
+}
+
+header nav a {
+    color: unset;
+    transition: .3s all;
+}
+
+header nav a:hover {
+    color: darkorange;
+}
+
+header .action {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+header .action a {
+    transition: .3s all;
+    color: unset;
+    display: flex;
+    gap: 0.5rem;
+}
+
+header .action a:hover {
+    color: darkorange;
+}
+
+header .action svg {
+    width: 15px;
+}
+
+header .action a.donate {
+    background: darkorange;
+    color: white;
+    padding: 0.4rem 2rem;
+    font-size: 0.85rem;
+    border-radius: 88px;
+    transition: .3s all;
+    gap: 0.4rem;
+}
+
+header .action a.donate svg {
+    fill: white;
+    width: 13px;
+}
+
+header .action a.donate:hover {
+    background: #be7c2b;
+}
+
+header .action a.volunteer svg {
+    transition: .3s all;
+}
+
+header .action a.volunteer:hover svg {
+    fill: darkorange;
+}
+
+header .mobile-menu {
+    display:none
+}
+
+@media screen and (max-width:568px){
+    header .action .volunteer {
+        display: none;
+    }
+
+    header .wrap {
+        background: white
+    }
+    
+    header nav {
+        position: fixed;
+        background: #ffffffa6;
+        z-index: -1;
+        opacity: 1;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 1rem;
+        backdrop-filter: blur(15px);
+        gap: 1rem 2rem;
+        top: -50px;
+        transition: .3s all;
+    }
+
+    header nav.show {
+        top: 55px;
+    }
+    
+    header .mobile-menu {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+    }
+    
+    header .mobile-menu svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    header .wrap {
+        grid-template-columns: 170px calc(100% - 205px) 35px;
+    }
+    
+    header .action {
+        justify-content: flex-end;
+        margin-right: 1rem;
+    }
+}
